@@ -1,0 +1,247 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  padding: 0;
+}
+
+.containerGeneral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1519666336592-e225a99dcd2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80');
+  background-size: 1550px 1000px;
+}
+
+
+
+.containerForm {
+  font-weight: bold;
+  margin: 10rem auto;
+  text-align: center;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: 10px 10px 29px -13px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  overflow: hidden;
+}
+
+.headerForm {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  opacity: 0.4;
+  background-color: white;
+  padding-top: 25px;
+}
+
+.headerFormTitle {
+  margin: 30px auto;
+  border-bottom: 3px solid #333;
+  padding-bottom: 15px;
+  width: 84%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: blue;
+}
+
+
+.searchForm {
+  background-color: white;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: relative;
+  bottom: 0px !important;
+  padding: 30px;
+}
+
+.searchFormSelect {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 8vh;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.searchFormSelectBorder {
+  display: flex;
+  flex-direction: row;
+  height: 8vh;
+  align-items: center;
+  width: 15rem;
+  justify-content: space-between;
+}
+
+.borderFormSelect{
+  border: 1px solid #150baa;
+}
+
+.searchFormDestiny {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.inputCityOrigin {
+  width: 90%;
+ 
+  height: 35px;
+}
+.inputCityDestiny {
+  width: 90%;
+  
+  height: 35px;
+}
+
+.searchFormDestinyList {
+  border: 1px solid;
+  border-radius: 5px;
+  height: 150px;
+  overflow-y: scroll;
+  width: 250px;
+  margin: 10px auto 0;
+}
+
+.searchFormDestinyList p {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 2.5px 0;
+}
+
+.searchFormDestinyList p:hover {
+  background-color: #e6e6e6;
+}
+
+.inputFrom {
+  
+  height: 35px;
+  width: 13%;
+}
+
+.inputTo {
+ 
+  height: 35px;
+  width: 13%;
+}
+
+button {
+  background: linear-gradient(to bottom, #2658e3, #150baa);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  height: 55px;
+  width: 14rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  margin-right: 50px;
+  text-align: center;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #10286b, #09026b);
+}
+
+label {
+  font-weight: bold;
+  color: #0e0f25;
+}
+
+input[type='text'],
+input[type='date'],
+input[type='number'] {
+  padding: 10px;
+  border: 1px solid #2658e3;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #fff, #f9f9f9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #fff, #f9f9f9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.contentCardFlight {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to bottom, #f0f0f0, #e6e6e6);
+  width: 80%;
+  margin: 30px auto;
+  justify-content: space-between;
+  border: 1px solid #aaaaaa;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.contentCardFlight p {
+  font-size: 15px;
+  font-weight: bold;
+  font-weight: 400;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cardSearch {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  justify-content: center;
+}
+
+.cardLine {
+  display: flex;
+  border-bottom: solid 2px black;
+  width: 17%;
+  height: 105px;
+  align-items: end;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 760px) {
+  .line1,
+  .line2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    height: 70%;
+  }
+
+  .contentCardFlight p {
+    font-size: 10px;
+    font-weight: 100;
+  }
+
+  .cardLine {
+    display: none;
+    border-bottom: none;
+    width: none;
+    height: none;
+    align-items: none;
+    text-align: none;
+  }
+}
+
+
