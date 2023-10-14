@@ -12,14 +12,14 @@ body {
   justify-content: center;
   width: 100%;
   background-image: url('./assets/avion.jpg');
-  background-size: 1550px 1000px;
+  background-size: 1900px 1100px;
 }
 
 .containerForm {
   font-weight: bold;
   margin: 10rem auto;
   text-align: center;
-  width: 80%;
+  width: 68%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -97,14 +97,22 @@ body {
 }
 
 .inputCityOrigin {
-  width: 90%;
+  width: 135%;
  
   height: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .inputCityDestiny {
-  width: 90%;
+  width: 135%;
   
   height: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .searchFormDestinyList {
@@ -115,6 +123,7 @@ body {
   width: 250px;
   margin: 10px auto 0;
 }
+
 
 .searchFormDestinyList p {
   cursor: pointer;
@@ -127,14 +136,18 @@ body {
 }
 
 .inputFrom {
-  height: 18px;
+  height: 12px;
   width: 108%;
+  margin-bottom: 5px;
+  border-radius: 10px;
 }
 
 .inputTo {
  
-  height: 18px;
+  height: 12px;
   width: 108%;
+  margin-top: 3px;
+  border-radius: 10px;
 }
 
 .buttonSearch {
@@ -184,7 +197,7 @@ input[type='date'],
 input[type='number'] {
   padding: 10px;
   border: 1px solid #2658e3;
-  border-radius: 10px;
+  
   background: linear-gradient(to bottom, #fff, #f9f9f9);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
@@ -202,7 +215,12 @@ select {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 148%;
+  border: 1px solid #150baa;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .contentCardFlight {
@@ -280,14 +298,43 @@ select {
 
 
 @media (max-width: 760px) {
-  .line1,
-  .line2 {
+
+  .containerGeneral{
+    background-image: none;
+    background-color: rgb(188, 194, 232);
+  }
+
+  .searchFormSelectBorder {
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  .searchForm{
+    width: 84%;
+  }
+
+  .searchFormSelect{
+    justify-content: center;
+  }
+  
+  .containerForm {
+    height: 70%;
     display: flex;
     flex-direction: column;
   }
-  .container {
-    height: 70%;
+
+  .searchFormDestiny{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
   }
+
+
 
   .contentCardFlight p {
     font-size: 10px;

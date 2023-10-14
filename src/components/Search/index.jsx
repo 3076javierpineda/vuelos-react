@@ -79,14 +79,14 @@ const Search = ({ fetchFlights }) => {
                   onChange={handleAirportFromChange} 
                 /> 
                 {fromAirports && ( 
-                  <select id='selectAirportOrigin' className='searchFormDestinyDropdown' onChange={(e) => handleFromAirport(e.target.value)}> 
-                    <option value=''>Aeropuerto origen</option> 
+                   <select id='selectAirportOrigin' className='searchFormDestinyDropdown' onChange={(e) => handleFromAirport(e.target.value)}> 
+                    <option value='' >Aeropuerto origen</option> 
                     {fromAirports.map((airport) => ( 
                       <option key={airport?.id} value={airport?.iata}> 
                         {airport?.name} - {airport?.iata} 
                       </option> 
                     ))} 
-                  </select> 
+                  </select>
                 )} 
               </div> 
               <div> 
