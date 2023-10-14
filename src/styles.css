@@ -11,11 +11,9 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-image: url('https://images.unsplash.com/photo-1519666336592-e225a99dcd2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80');
+  background-image: url('./assets/avion.jpg');
   background-size: 1550px 1000px;
 }
-
-
 
 .containerForm {
   font-weight: bold;
@@ -70,7 +68,7 @@ body {
   flex-wrap: nowrap;
   height: 8vh;
   align-items: center;
-  margin-bottom: 3px;
+  margin-bottom: 30px;
 }
 
 .searchFormSelectBorder {
@@ -93,15 +91,20 @@ body {
   justify-content: space-between;
 }
 
+.containerDates {
+  display: flex;
+  flex-direction: column;
+}
+
 .inputCityOrigin {
   width: 90%;
  
-  height: 35px;
+  height: 18px;
 }
 .inputCityDestiny {
   width: 90%;
   
-  height: 35px;
+  height: 18px;
 }
 
 .searchFormDestinyList {
@@ -124,18 +127,17 @@ body {
 }
 
 .inputFrom {
-  
-  height: 35px;
-  width: 13%;
+  height: 18px;
+  width: 108%;
 }
 
 .inputTo {
  
-  height: 35px;
-  width: 13%;
+  height: 18px;
+  width: 108%;
 }
 
-button {
+.buttonSearch {
   background: linear-gradient(to bottom, #2658e3, #150baa);
   color: #fff;
   border: none;
@@ -149,6 +151,7 @@ button {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
   margin-right: 50px;
   text-align: center;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -158,6 +161,22 @@ button:hover {
 label {
   font-weight: bold;
   color: #0e0f25;
+}
+
+input[type="date"]::placeholder {
+  color: transparent;
+}
+
+input[type="date"]::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input[type="date"]::-moz-placeholder {
+  color: transparent;
+}
+
+input[type="date"]::-ms-input-placeholder {
+  color: transparent;
 }
 
 input[type='text'],
@@ -176,6 +195,14 @@ select {
   border-radius: 10px;
   background: linear-gradient(to bottom, #fff, #f9f9f9);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.searchFormDestinyDropdown{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .contentCardFlight {
@@ -219,6 +246,39 @@ select {
   justify-content: center;
 }
 
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.pagination-button {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #e0e0e0;
+  color: #ffffff;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  background-color: #e0e0e0;
+}
+
+.active-page {
+  background-color: #007bff;
+  color: white;
+}
+
+
 @media (max-width: 760px) {
   .line1,
   .line2 {
@@ -243,5 +303,3 @@ select {
     text-align: none;
   }
 }
-
-
