@@ -80,7 +80,7 @@ const Search = ({ fetchFlights }) => {
                 /> 
                 {fromAirports && ( 
                   <select id='selectAirportOrigin' className='searchFormDestinyDropdown' onChange={(e) => handleFromAirport(e.target.value)}> 
-                    <option value=''>Selecciona un aeropuerto</option> 
+                    <option value=''>Aeropuerto origen</option> 
                     {fromAirports.map((airport) => ( 
                       <option key={airport?.id} value={airport?.iata}> 
                         {airport?.name} - {airport?.iata} 
@@ -99,7 +99,7 @@ const Search = ({ fetchFlights }) => {
                 /> 
                 {toAirports && ( 
                   <select id='selectAirportDestiny' className='searchFormDestinyDropdown' onChange={(e) => handleToAirport(e.target.value)}> 
-                    <option value=''>Selecciona un aeropuerto</option> 
+                    <option value=''>Aeropuerto destino</option> 
                     {toAirports.map((airport) => ( 
                       <option key={airport?.id} value={airport?.iata}> 
                         {airport?.name} - {airport?.iata} 
